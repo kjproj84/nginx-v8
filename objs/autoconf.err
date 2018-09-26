@@ -1,0 +1,893 @@
+
+
+----------------------------------------
+checking for C compiler
+
+
+----------------------------------------
+checking for gcc -pipe switch
+
+
+----------------------------------------
+checking for --with-ld-opt="-lstdc++ -ldl -lpthread"
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for -Wl,-E switch
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for gcc builtin atomic operations
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for C99 variadic macros
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for gcc variadic macros
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for gcc builtin 64 bit byteswap
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for unistd.h
+
+
+----------------------------------------
+checking for inttypes.h
+
+
+----------------------------------------
+checking for limits.h
+
+
+----------------------------------------
+checking for sys/filio.h
+
+objs/autotest.c:3:23: fatal error: sys/filio.h: No such file or directory
+compilation terminated.
+----------
+
+
+#include <sys/filio.h>
+
+int main(void) {
+    return 0;
+}
+
+----------
+cc -o objs/autotest objs/autotest.c
+----------
+
+----------------------------------------
+checking for sys/param.h
+
+
+----------------------------------------
+checking for sys/mount.h
+
+
+----------------------------------------
+checking for sys/statvfs.h
+
+
+----------------------------------------
+checking for crypt.h
+
+
+----------------------------------------
+checking for epoll
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for EPOLLRDHUP
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for EPOLLEXCLUSIVE
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:9:43: error: 'EPOLLEXCLUSIVE' undeclared (first use in this function)
+                       ee.events = EPOLLIN|EPOLLEXCLUSIVE;
+                                           ^
+objs/autotest.c:9:43: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/epoll.h>
+
+int main(void) {
+    int efd = 0, fd = 0;
+                      struct epoll_event ee;
+                      ee.events = EPOLLIN|EPOLLEXCLUSIVE;
+                      ee.data.ptr = NULL;
+                      epoll_ctl(efd, EPOLL_CTL_ADD, fd, &ee);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for O_PATH
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sendfile()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sendfile64()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sys/prctl.h
+
+
+----------------------------------------
+checking for prctl(PR_SET_DUMPABLE)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for prctl(PR_SET_KEEPCAPS)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for capabilities
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for crypt_r()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sys/vfs.h
+
+
+----------------------------------------
+checking for poll()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for /dev/poll
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c:4:25: fatal error: sys/devpoll.h: No such file or directory
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/devpoll.h>
+
+int main(void) {
+    int  n, dp; struct dvpoll  dvp;
+                  dp = 0;
+                  dvp.dp_fds = NULL;
+                  dvp.dp_nfds = 0;
+                  dvp.dp_timeout = 0;
+                  n = ioctl(dp, DP_POLL, &dvp);
+                  if (n == -1) return 1;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for kqueue
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c:4:23: fatal error: sys/event.h: No such file or directory
+compilation terminated.
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/event.h>
+
+int main(void) {
+    (void) kqueue();
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for crypt()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+/tmp/ccjdbANx.o: In function `main':
+autotest.c:(.text+0xf): undefined reference to `crypt'
+collect2: error: ld returned 1 exit status
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+
+
+int main(void) {
+    crypt("test", "salt");;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for crypt() in libcrypt
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for F_READAHEAD
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:14: error: 'F_READAHEAD' undeclared (first use in this function)
+     fcntl(0, F_READAHEAD, 1);;
+              ^
+objs/autotest.c:7:14: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main(void) {
+    fcntl(0, F_READAHEAD, 1);;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for posix_fadvise()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for O_DIRECT
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for F_NOCACHE
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:14: error: 'F_NOCACHE' undeclared (first use in this function)
+     fcntl(0, F_NOCACHE, 1);;
+              ^
+objs/autotest.c:7:14: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main(void) {
+    fcntl(0, F_NOCACHE, 1);;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for directio()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:8:5: warning: implicit declaration of function 'directio' [-Wimplicit-function-declaration]
+     directio(0, DIRECTIO_ON);;
+     ^
+objs/autotest.c:8:17: error: 'DIRECTIO_ON' undeclared (first use in this function)
+     directio(0, DIRECTIO_ON);;
+                 ^
+objs/autotest.c:8:17: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/types.h>
+                  #include <sys/fcntl.h>
+
+int main(void) {
+    directio(0, DIRECTIO_ON);;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for statfs()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for statvfs()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for dlopen()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sched_yield()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sched_setaffinity()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for SO_SETFIB
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:31: error: 'SO_SETFIB' undeclared (first use in this function)
+     setsockopt(0, SOL_SOCKET, SO_SETFIB, NULL, 0);
+                               ^
+objs/autotest.c:7:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+
+int main(void) {
+    setsockopt(0, SOL_SOCKET, SO_SETFIB, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for SO_REUSEPORT
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for SO_ACCEPTFILTER
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:31: error: 'SO_ACCEPTFILTER' undeclared (first use in this function)
+     setsockopt(0, SOL_SOCKET, SO_ACCEPTFILTER, NULL, 0);
+                               ^
+objs/autotest.c:7:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+
+int main(void) {
+    setsockopt(0, SOL_SOCKET, SO_ACCEPTFILTER, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for SO_BINDANY
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:31: error: 'SO_BINDANY' undeclared (first use in this function)
+     setsockopt(0, SOL_SOCKET, SO_BINDANY, NULL, 0);
+                               ^
+objs/autotest.c:7:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+
+int main(void) {
+    setsockopt(0, SOL_SOCKET, SO_BINDANY, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for IP_TRANSPARENT
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for IP_BINDANY
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:8:31: error: 'IP_BINDANY' undeclared (first use in this function)
+     setsockopt(0, IPPROTO_IP, IP_BINDANY, NULL, 0);
+                               ^
+objs/autotest.c:8:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+                  #include <netinet/in.h>
+
+int main(void) {
+    setsockopt(0, IPPROTO_IP, IP_BINDANY, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for IP_BIND_ADDRESS_NO_PORT
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for IP_RECVDSTADDR
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:8:31: error: 'IP_RECVDSTADDR' undeclared (first use in this function)
+     setsockopt(0, IPPROTO_IP, IP_RECVDSTADDR, NULL, 0);
+                               ^
+objs/autotest.c:8:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+                  #include <netinet/in.h>
+
+int main(void) {
+    setsockopt(0, IPPROTO_IP, IP_RECVDSTADDR, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for IP_SENDSRCADDR
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:8:31: error: 'IP_SENDSRCADDR' undeclared (first use in this function)
+     setsockopt(0, IPPROTO_IP, IP_SENDSRCADDR, NULL, 0);
+                               ^
+objs/autotest.c:8:31: note: each undeclared identifier is reported only once for each function it appears in
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/socket.h>
+                  #include <netinet/in.h>
+
+int main(void) {
+    setsockopt(0, IPPROTO_IP, IP_SENDSRCADDR, NULL, 0);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for IP_PKTINFO
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for IPV6_RECVPKTINFO
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for TCP_DEFER_ACCEPT
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for TCP_KEEPIDLE
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for TCP_FASTOPEN
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for TCP_INFO
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for accept4()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for eventfd()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for int size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for long size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for long long size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for void * size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for uint32_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for uint64_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sig_atomic_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sig_atomic_t size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for socklen_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for in_addr_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for in_port_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for rlim_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for uintptr_t
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for system byte ordering
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for size_t size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for off_t size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for time_t size
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for AF_INET6
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for setproctitle()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:7:5: warning: implicit declaration of function 'setproctitle' [-Wimplicit-function-declaration]
+     setproctitle("test");;
+     ^
+/tmp/ccH7bLg1.o: In function `main':
+autotest.c:(.text+0xf): undefined reference to `setproctitle'
+collect2: error: ld returned 1 exit status
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(void) {
+    setproctitle("test");;
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for pread()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for pwrite()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for pwritev()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sys_nerr
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+/tmp/ccNr8wwa.o: In function `main':
+autotest.c:(.text+0x6): warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+135
+----------------------------------------
+checking for localtime_r()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for clock_gettime(CLOCK_MONOTONIC)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for posix_memalign()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for memalign()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for mmap(MAP_ANON|MAP_SHARED)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for mmap("/dev/zero", MAP_SHARED)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for System V shared memory
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for POSIX semaphores
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for struct msghdr.msg_control
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for ioctl(FIONBIO)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for struct tm.tm_gmtoff
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for struct dirent.d_namlen
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+objs/autotest.c: In function 'main':
+objs/autotest.c:8:28: error: 'struct dirent' has no member named 'd_namlen'
+     struct dirent  dir; dir.d_namlen = 0;
+                            ^
+objs/autotest.c:9:41: error: 'struct dirent' has no member named 'd_namlen'
+                   printf("%d", (int) dir.d_namlen);
+                                         ^
+----------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <dirent.h>
+                  #include <stdio.h>
+
+int main(void) {
+    struct dirent  dir; dir.d_namlen = 0;
+                  printf("%d", (int) dir.d_namlen);
+    return 0;
+}
+
+----------
+cc -Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -lstdc++ -ldl -lpthread
+----------
+
+----------------------------------------
+checking for struct dirent.d_type
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sysconf(_SC_NPROCESSORS_ONLN)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for sysconf(_SC_LEVEL1_DCACHE_LINESIZE)
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for openat(), fstatat()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C
+
+----------------------------------------
+checking for getaddrinfo()
+
+cc1: warning: command line option '-std=c++11' is valid for C++/ObjC++ but not for C
+cc1: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C

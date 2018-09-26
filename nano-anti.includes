@@ -1,0 +1,11 @@
+cppngx
+objs
+src/core
+src/event
+src/http
+src/http/modules
+src/http/modules/perl
+src/http/v2
+src/mail
+src/os/unix
+src/stream

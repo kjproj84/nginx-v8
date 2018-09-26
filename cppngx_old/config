@@ -1,0 +1,11 @@
+ngx_addon_name=ngx_http_hello_world_module
+HTTP_MODULES="$HTTP_MODULES ngx_http_hello_world_module"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_hello_world_module.cpp"
+#CORE_INCS="/home/kijin/v8_final/v8/include /home/kijin/v8_final/v8 $CORE_INCS"
+CORE_INCS="/opt/libv8-6.5/include $CORE_INCS"
+#CORE_LIBS="-lstdc++ -ldl $CORE_LIBS"
+#CORE_LIBS="-L/home/kijin/v8_final/v8/out/s390x.release/lib.target -L/home/kijin/v8_final/v8/out/s390x.release/obj.target/src -lv8 -lstdc++ -ldl $CORE_LIBS"
+CORE_LIBS="-g -O2 -std=c++11 -I/opt/libv8-6.5/include -L/opt/libv8-6.5/lib/ -Wl,-rpath,$LIB_DIR -lv8_libbase -lv8_libplatform -lv8 -lpthread $CORE_LIBS"
+#CORE_LIBS="-g -O2 -std=c++11 -L/opt/libv8-6.5/lib/ -Wl,-rpath,$LIB_DIR -lv8 -lpthread $CORE_LIBS"
+#CORE_LIBS="-lv8 -lstdc++ -ldl $CORE_LIBS"
+

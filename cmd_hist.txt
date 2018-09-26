@@ -1,0 +1,1000 @@
+ 1335  ls
+ 1336  gedit  ngx_http_hello_world_module.c 
+ 1337  gedit config 
+ 1338  gedit  ngx_http_hello_world_module.c 
+ 1339  lls
+ 1340  ls
+ 1341  cp /home/kijin/projects/jsoffloader/extremejs/ngxv8/hello.cc .
+ 1342  ls
+ 1343  mv ngx_http_hello_world_module.c ngx_http_hello_world_modulec 
+ 1344  mv hello.cc ngx_http_hello_world_module.c 
+ 1345  vim config 
+ 1346  cd ..
+ 1347  cd o_ngxv8/
+ 1348  ls
+ 1349  vim ngx_http_v8_module.cc 
+ 1350  history 
+ 1351  ls
+ 1352  cd out/x64.release/
+ 1353  ls
+ 1354  cd ..
+ 1355  ls
+ 1356  cd x64.release/
+ 1357  ls
+ 1358  cd gen/
+ 1359  ls
+ 1360  cd include/
+ 1361  ls
+ 1362  cd inspector/
+ 1363  ls
+ 1364  cd ..
+ 1365  ls
+ 1366  cd ..
+ 1367  ls
+ 1368  cd ..
+ 1369  cd /home/kijin/v88/v889/
+ 1370  ls
+ 1371  cd out/
+ 1372  ls
+ 1373  cd x64.release/
+ 1374  ls
+ 1375  cd gen/
+ 1376  ls
+ 1377  cd include/
+ 1378  ls
+ 1379  cd inspector/
+ 1380  ls
+ 1381  cd ..
+ 1382  ls
+ 1383  cd ..
+ 1384  find . -name v8.h
+ 1385  cd ..
+ 1386  find . -name v8.h
+ 1387  cd ..
+ 1388  find . -name v8.h
+ 1389  cd src/
+ 1390  ls
+ 1391  pwd
+ 1392  find . -name globals.h
+ 1393  ls
+ 1394  cd ..
+ 1395  ls
+ 1396  cd out/x64.release/
+ 1397  sl
+ 1398  ls
+ 1399  cd ..
+ 1400  ls
+ 1401  cd v889/
+ 1402  ls
+ 1403  cd ~
+ 1404  cd v8
+ 1405  ls
+ 1406  cd ..
+ 1407  cd projects/jsoffloader/
+ 1408  ls
+ 1409  cd ..
+ 1410  ls
+ 1411  cd jsoffloader/
+ 1412  ls
+ 1413  cd extremejs/
+ 1414  ls
+ 1415  cd ngg
+ 1416  cd ngxv8/
+ 1417  ls
+ 1418  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1419  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http /home/kijin/projects/jsoffloader/extremejs/nginx-hello-world-module/ngx_http_hello_world_module.c -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1420  ls
+ 1421  ./hello-world 
+ 1422  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1423  ls
+ 1424  vim ngx_http_v8_embed_module.cpp 
+ 1425  vim v8js.h
+ 1426  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1427  vim v8js.h
+ 1428  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1429  vim v8js.h
+ 1430  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1431  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -lv8 -std=c++0x
+ 1432  cd ../o_ngxv8/
+ 1433  ls
+ 1434  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http /ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -lv8 -std=c++0x
+ 1435  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -lv8 -std=c++0x
+ 1436  vim ngx_http_v8_module.cc 
+ 1437  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_embed_module.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -lv8 -std=c++0x
+ 1438  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http *.cpp -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1439  ls
+ 1440  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1441  clear
+ 1442  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1443  clear
+ 1444  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1445  ls
+ 1446  cd v8com/
+ 1447  ls
+ 1448  cd hmac/
+ 1449  ls
+ 1450  vim hmac.cc
+ 1451  cd ..
+ 1452  ls
+ 1453  cd ..
+ 1454  ls
+ 1455  vim config 
+ 1456  vim ngx_http_v8_module.cc 
+ 1457  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1458  \
+ 1459  c++ -I. -I/home/kijin/v8/v8/include -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1460  ls
+ 1461  vim ngx_http_v8_module.cc 
+ 1462  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1463  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1464  vim ngx_http_v8_module.cc 
+ 1465  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1466  vim ngx_http_v8_module.cc 
+ 1467  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1468  ls
+ 1469  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o ./hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1470  ls
+ 1471  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o ./hello-world
+ 1472  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group /home/kijin/v8/v8/out/x64.release/obj/{libv8_{base,libbase,external_snapshot,libplatform,libsampler},third_party/icu/libicu{uc,i18n},src/inspector/libinspector}.a -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1473  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.14.0/src/event -I/home/kijin/nginx-1.14.0/src/http/modules -I/home/kijin/nginx-1.14.0/src/event/modules -I/home/kijin/nginx-1.14.0/src/os/unix -I/home/kijin/nginx-1.14.0/objs -I/home/kijin/nginx-1.14.0/src/http ngx_http_v8_module.cc -o hello-world -Wl,--start-group -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1474  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1475  ls
+ 1476  vim config 
+ 1477  c++ -I. -I /home/kijin/nginx-1.14.0/src/core -I/home/kijin/nginx-1.13.12/src/event -I/home/kijin/nginx-1.13.12/src/http/modules -I/home/kijin/nginx-1.13.12/src/event/modules -I/home/kijin/nginx-1.13.12/src/os/unix -I/home/kijin/nginx-1.13.12/objs -I/home/kijin/nginx-1.13.12/src/http ngx_http_v8_module.cc -o hello-world  -Wl,--end-group -lrt -ldl -pthread -std=c++0x
+ 1478  ls
+ 1479  cd ..
+ 1480  cd .. 
+ 1481  cd ..
+ 1482  ls
+ 1483  cd v8_61541/
+ 1484  ls
+ 1485  cd in
+ 1486  cd include/
+ 1487  ls
+ 1488  cd ..
+ 1489  ./tools/dev/gm.y
+ 1490  ./tools/dev/gm
+ 1491  python ./tools/dev/gm.py 
+ 1492  python ./tools/dev/gm.py x64.release
+ 1493  python3.5 ./tools/dev/gm.py x64.release
+ 1494  python ./tools/dev/gm.py x64.release
+ 1495  python2.7 ./tools/dev/gm.py x64.release
+ 1496  ls
+ 1497  python2.7 ./tools/dev/gm.py x64.release
+ 1498  gn
+ 1499  which gn
+ 1500  ls
+ 1501  ./tools/dev/gm.py x64.release
+ 1502  gn
+ 1503  ls
+ 1504  vim aa.sh
+ 1505  chmod +x aa.sh 
+ 1506  ./aa.sh 
+ 1507  gn
+ 1508  ls
+ 1509  ./gn
+ 1510  vim aa.sh 
+ 1511  cd tools/
+ 1512  ls
+ 1513  cat ../aa.sh 
+ 1514  cd gn
+ 1515  cd ..
+ 1516  ls
+ 1517  cd ..
+ 1518  ls
+ 1519  mkdir tools
+ 1520  cd tools/
+ 1521  cp ../v8_61541/aa.sh .
+ 1522  ./aa.sh 
+ 1523  ls
+ 1524  cd gn-standalone/
+ 1525  ls
+ 1526  cd tools/
+ 1527  ls
+ 1528  cd gn/
+ 1529  ls
+ 1530  cd ..
+ 1531  ls
+ 1532  cd ..
+ 1533  ls
+ 1534  cd gn-standalone/
+ 1535  ls
+ 1536  cd tools/
+ 1537  ls
+ 1538  cd gn/
+ 1539  ls
+ 1540  cd bootstrap/
+ 1541  ls
+ 1542  cd ..
+ 1543  cd ...
+ 1544  which gn
+ 1545  cd /home/kijin/projects/jsoffloader/depot_tools/
+ 1546  ls
+ 1547  ./gn
+ 1548  ./gn.py
+ 1549  cd ..
+ 1550  mv depot_tools/ depot_toolsss
+ 1551  gn
+ 1552  cd ..
+ 1553  ls
+ 1554  cd tools/
+ 1555  ls
+ 1556  cd ..
+ 1557  cd tools/
+ 1558  ls
+ 1559  ./aa.sh 
+ 1560  cd gn-standalone/
+ 1561  ls
+ 1562  find -name . gn
+ 1563  find . -name gn
+ 1564  cd tools/gn
+ 1565  ls
+ 1566  cd ..
+ 1567  s
+ 1568  ls
+ 1569  cd ..
+ 1570  cd build/android/
+ 1571  ls
+ 1572  cd gn/
+ 1573  ls
+ 1574  cd ..
+ 1575  ls
+ 1576  rm -rf gn-standalone/
+ 1577  ./aa.sh 
+ 1578  ls
+ 1579  cd gn-standalone/tools/
+ 1580  ls
+ 1581  cd gn/
+ 1582  ls
+ 1583  cat README.md 
+ 1584  cd ..
+ 1585  git clone https://gn.googlesource.com/gn
+ 1586  cd gn
+ 1587  ls
+ 1588  python build/gen.py 
+ 1589  ninja -C out
+ 1590  sudo ninja -C out
+ 1591  ninja 
+ 1592  ls
+ 1593  which ninja
+ 1594  sudo apt-get remove ninja
+ 1595  sudo apt-get purge ninja
+ 1596  ninja
+ 1597  ls
+ 1598  history 
+ 1599  sudo ninja -C out
+ 1600  ninja
+ 1601  sudo apt install ninja-build
+ 1602  ninja
+ 1603  sudo ninja -C out
+ 1604  gn
+ 1605  ls
+ 1606  ninja -C out
+ 1607  ls
+ 1608  cd tools/
+ 1609  ls
+ 1610  cd gn/
+ 1611  ls
+ 1612  gn
+ 1613  cd ..
+ 1614  ls
+ 1615  vim README.md 
+ 1616  python build/gen.py 
+ 1617  ninja -C out
+ 1618  sudo ninja -C out
+ 1619  ls
+ 1620  vim README.md 
+ 1621  ls
+ 1622  cd out/
+ 1623  ls
+ 1624  ./gn
+ 1625  sudo ln -s /home/kijin/tools/gn/out/gn /usr/bin/gn
+ 1626  gn
+ 1627  cd ..
+ 1628  gn
+ 1629  cd ..
+ 1630  ls
+ 1631  cd v8_61541/
+ 1632  ls
+ 1633  python tools/dev/gm.py 
+ 1634  python tools/dev/gm.py x64.release
+ 1635  gn
+ 1636  python2.7 tools/dev/gm.py x64.release
+ 1637  tools/dev/gm.py x64.release
+ 1638  chmod tools/dev/gm.py 
+ 1639  chmod +x tools/dev/gm.py 
+ 1640  ./tools/dev/gm.py 
+ 1641  ./tools/dev/gm.py x64.release
+ 1642  ./build/install-build-deps.sh
+ 1643  tools/dev/gm.py x64.release
+ 1644  tools/dev/v8gen.py x64.release
+ 1645  ls
+ 1646  cat BUILD.gn 
+ 1647  gn
+ 1648  gn gen
+ 1649  ls
+ 1650  tools/dev/gm.py 
+ 1651  tools/dev/gm.py x64.release
+ 1652  cd ..
+ 1653  ls
+ 1654  cd v8_6310/
+ 1655  ls
+ 1656  ./tools/dev/gm.py 
+ 1657  ./tools/dev/gm.py x64.release
+ 1658  cd ..
+ 1659  cd v8/v8/
+ 1660  ls
+ 1661  ./tools/dev/gm.py x64.release
+ 1662  autoninja
+ 1663  ./tools/dev/gm.py x64.release
+ 1664  autoninja
+ 1665  sudo apt install autoninja
+ 1666  cd ..
+ 1667  ls
+ 1668  mkdir v8_659
+ 1669  cd v8_659/
+ 1670  mv ~/Downloads/v8.git-refs_heads_6.5.99.tar.gz .
+ 1671  ls
+ 1672  tar xvf v8.git-refs_heads_6.5.99.tar.gz 
+ 1673  ls
+ 1674  ./tools/dev/gm.py 
+ 1675  ./tools/dev/gm.py x64.release
+ 1676  ls
+ 1677  find . -name build
+ 1678  cd src/inspector/build/
+ 1679  ls
+ 1680  cd ..
+ 1681  gclient sync
+ 1682  source ~/.bashrc 
+ 1683  gclient sync
+ 1684  vim ~/.bashrc 
+ 1685  gclient config
+ 1686  gclient sync
+ 1687  git pull
+ 1688  cd ..
+ 1689  ls
+ 1690  mkdir others
+ 1691  cd others/
+ 1692  ls
+ 1693  history |grep git
+ 1694  git clone -b 6.5.99 --single-branch https://chromium.googlesource.com/v8/v8
+ 1695  ls
+ 1696  cd v8/
+ 1697  ls
+ 1698  gclient sync
+ 1699  gedit ~/.bashrc 
+ 1700  source ~/.bashrc 
+ 1701  gedit ~/.bashrc 
+ 1702  gclient sync
+ 1703  source ~/.bashrc 
+ 1704  ./tools/dev/gm.py 
+ 1705  ./tools/dev/gm.py x64.release
+ 1706  sudo ./tools/dev/gm.py x64.release
+ 1707  ./tools/dev/gm.py x64.release
+ 1708  sudo ./tools/dev/gm.py x64.release
+ 1709  ./tools/dev/gm.py x64.release
+ 1710  gn
+ 1711  gn help
+ 1712  ls
+ 1713  ./tools/dev/gm.py x64.release
+ 1714  goma
+ 1715  echo $GOMA_DIR
+ 1716  gn
+ 1717  make
+ 1718  vim AUTHORS 
+ 1719  make
+ 1720  ls
+ 1721  ./tools/dev/gm.py x64.release
+ 1722  gn args --short --list=use_goma out/x64.release
+ 1723  mkdir build
+ 1724  gn args --short --list=use_goma out/x64.release
+ 1725  tools/dev/v8gen.py list
+ 1726  tools/dev/gm.py x64.release
+ 1727  gn
+ 1728  gn help
+ 1729  tools/dev/gm.py x64.release
+ 1730  ls
+ 1731  cd in
+ 1732  cd include/
+ 1733  ls
+ 1734  cd ..
+ 1735  git reset
+ 1736  gclient sync
+ 1737  cd ..
+ 1738  cd v8
+ 1739  gclient sync
+ 1740  cd ..
+ 1741  mkdir aa
+ 1742  cd aa
+ 1743  fetch v8
+ 1744  ls
+ 1745  cd v8/
+ 1746  ls
+ 1747  ./tools/dev/gm.py 
+ 1748  ./tools/dev/gm.py x64.release
+ 1749  ls
+ 1750  cd build
+ 1751  ls
+ 1752  cd ..
+ 1753  git checkout -6.5.1
+ 1754  git checkout -b 6.5.1
+ 1755  git his
+ 1756  git hist
+ 1757  git help
+ 1758  git branch
+ 1759  ls
+ 1760  git pull
+ 1761  ls
+ 1762  cd in
+ 1763  cd include/
+ 1764  ls
+ 1765  cd ..
+ 1766  ls
+ 1767  git checkout 8db46042ed29e8696d1ad58155e6efb182adebd7
+ 1768  git checkout -b 8db46042ed29e8696d1ad58155e6efb182adebd7
+ 1769  ls
+ 1770  tools/mb/mb.py 
+ 1771  tools/mb/mb.py gen
+ 1772  /usr/bin/python -u tools/mb/mb.py gen -f infra/mb/mb_config.pyl -m client.v8 -b V8 Linux64 - debug builder out.gn/CVE-2017-5070
+ 1773  /usr/bin/python -u tools/mb/mb.py gen -f infra/mb/mb_config.pyl -m client.v8 -b V8 Linux64 - debug builder
+ 1774  /usr/bin/python -u tools/mb/mb.py
+ 1775  git reset --hard a8424d592feff907c3f9a47310765c81321abe7b
+ 1776  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1777  ls
+ 1778  ./tools/dev/gm.py 
+ 1779  ./tools/dev/gm.py x64.release
+ 1780  ls
+ 1781  cd ..
+ 1782  ls
+ 1783  cd ..
+ 1784  ls
+ 1785  cd others/
+ 1786  ls
+ 1787  cd v8/
+ 1788  ls
+ 1789  git reset --hard a8424d592feff907c3f9a47310765c81321abe7b
+ 1790  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1791  gclient sync
+ 1792  tools/dev/v8gen.py x64.release
+ 1793  cd ..
+ 1794  cd v8
+ 1795  tools/dev/v8gen.py x64.release
+ 1796  ls
+ 1797  cd build
+ 1798  cd ..
+ 1799  cd buildtools/
+ 1800  ls
+ 1801  cd ..
+ 1802  find . -name gn_helpers
+ 1803  cd ..
+ 1804  sl
+ 1805  ls
+ 1806  cd aa/
+ 1807  ls
+ 1808  cd v8/
+ 1809  tools/dev/v8gen.py x64.release
+ 1810  git reset --hard 1d9d8e19e6b0ee3cfdc4bb6ac1b1203f66e50498
+ 1811  tools/dev/v8gen.py x64.release
+ 1812  tools/dev/v8gen.py x64.release -vv
+ 1813  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1814  git reset --hard 1d9d8e19e6b0ee3cfdc4bb6ac1b1203f66e50498
+ 1815  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1816  ls
+ 1817  cd out.gn/x64.release/
+ 1818  ls
+ 1819  cd ..
+ 1820  ls
+ 1821  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1822  cd ..
+ 1823  tools/dev/v8gen.py -b "V8 Linux64 - debug builder" -m client.v8 CVE-2017-5070 -vv
+ 1824  history 
+ 1825  tools/dev/v8gen.py x64.release
+ 1826  apt-cache search libv8
+ 1827  apt-cache search libv8-dev
+ 1828  apt-get install libv6*
+ 1829  sudo apt-get install libv6*
+ 1830  sudo apt-get install libv8-3.14.5 
+ 1831  cd ~/projects/jsoffloader/
+ 1832  ls
+ 1833  cd depot_tools/
+ 1834  ls
+ 1835  ./gn
+ 1836  cd ..
+ 1837  ls
+ 1838  cd extremejs/
+ 1839  ls
+ 1840  cd migrator/
+ 1841  ls
+ 1842  vim migrator.php 
+ 1843  vim interp.php 
+ 1844  ls
+ 1845  cd ..
+ 1846  ls
+ 1847  cd migrator/
+ 1848  ls
+ 1849  vim interp.php 
+ 1850  vim migrator.js 
+ 1851  vim interp.php 
+ 1852  cd ~
+ 1853  cd tools/
+ 1854  mv ~/Downloads/node-v8.11.1-linux-x64.tar.xz .
+ 1855  tar xvf node-v8.11.1-linux-x64.tar.xz 
+ 1856  cd node-v8.11.1-linux-x64/
+ 1857  ls
+ 1858  cd share/
+ 1859  ls
+ 1860  cd systemtap/
+ 1861  ls
+ 1862  cd tapset/
+ 1863  ls
+ 1864  cd ..
+ 1865  cd  ..
+ 1866  ls
+ 1867  cd bin/
+ 1868  ls
+ 1869  ./node 
+ 1870  ./node version
+ 1871  ./node -version
+ 1872  ./node -v
+ 1873  ls
+ 1874  cd ..
+ 1875  ls
+ 1876  cd include/
+ 1877  ls
+ 1878  cd node/
+ 1879  ls
+ 1880  cd ..
+ 1881  ls
+ 1882  pwd
+ 1883  ls
+ 1884  cd projects/
+ 1885  ls
+ 1886  cd node-v6.11.2
+ 1887  ls
+ 1888  cd lib/
+ 1889  ls
+ 1890  cd ..
+ 1891  ls
+ 1892  cd ..
+ 1893  cd node-v6.11.2-linux-x64/
+ 1894  ls
+ 1895  cd lib/
+ 1896  ls
+ 1897  c d
+ 1898  cd node_modules/
+ 1899  ls
+ 1900  cd npm/
+ 1901  ls
+ 1902  cd lib/
+ 1903  ls
+ 1904  cd ..
+ 1905  ls
+ 1906  cd ..
+ 1907  git clone https://github.com/OnionIoT/nodejs.git
+ 1908  ls
+ 1909  cd nodejs/
+ 1910  ls
+ 1911  cd v8/
+ 1912  ls
+ 1913  cd lib/
+ 1914  ls
+ 1915  ldd libv8.so 
+ 1916  cd ..
+ 1917  ./configure 
+ 1918  make
+ 1919  ls
+ 1920  cd v8/
+ 1921  ls
+ 1922  cd lib/
+ 1923  ls
+ 1924  ldd libv8.so 
+ 1925  cat libv8.so 
+ 1926  ls
+ 1927  cd ..
+ 1928  cd Downloads/
+ 1929  tar xvf codeblocks_17.12-1_amd64_stable.tar.xz 
+ 1930  ls
+ 1931  unzip cdt-9.5.2.zip 
+ 1932  mkdir eclipse_cdt
+ 1933  cd eclipse_cdt/
+ 1934  mv ../cdt-9.5.2.zip .
+ 1935  unzip cdt-9.5.2.zip 
+ 1936  ls
+ 1937  cd binary/
+ 1938  ls
+ 1939  cd ..
+ 1940  rm -rf *
+ 1941  mv ../eclipse-cpp-oxygen-3-linux-gtk-x86_64.tar.gz .
+ 1942  ls
+ 1943  tar xvf eclipse-cpp-oxygen-3-linux-gtk-x86_64.tar.gz 
+ 1944  ls
+ 1945  cd eclipse/
+ 1946  ls
+ 1947  ./configuration/
+ 1948  ./eclipse 
+ 1949  cd v8/v8
+ 1950  ls
+ 1951  cd out
+ 1952  ls
+ 1953  c x64.release/
+ 1954  ls
+ 1955  cd x64.release/
+ 1956  ls
+ 1957  cd projects/jsoffloader/
+ 1958  ls
+ 1959  cd extremejs/
+ 1960  ls
+ 1961  cd migrator/
+ 1962  ls
+ 1963  vim migrator.js 
+ 1964  cd v8/v8
+ 1965  ls
+ 1966  cd ..
+ 1967  cd v8_re
+ 1968  cd v8_real/
+ 1969  ls
+ 1970  cd v8/
+ 1971  ls
+ 1972  cd out
+ 1973  ls
+ 1974  cd x64.debug/
+ 1975  ls
+ 1976  cd obj/
+ 1977  ls
+ 1978  cd ..
+ 1979  ls
+ 1980  cd ..
+ 1981  ls
+ 1982  cd ..
+ 1983  ls
+ 1984  cd out.gn/
+ 1985  ls
+ 1986  cd x64.release/
+ 1987  ls
+ 1988  cd obj/
+ 1989  ls
+ 1990  cd ..
+ 1991  find . -name 'libv8_*.a'
+ 1992  cd ../v8/v8
+ 1993  find . -name 'libv8_*.a'
+ 1994  cd out/x64.release/
+ 1995  ls
+ 1996  find . -name 'libinspector*.a'
+ 1997  find . -name 'libinspector*.so'
+ 1998  find . -name '*.so'
+ 1999  cd ~
+ 2000  cd nginx-1.14.0/
+ 2001  history |grep configure
+ 2002  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-ld-opt="-lstdc++ -ldl -lpthread" --sbin-path=/usr/local/sbin -with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread" --without-http_rewrite_module --without-http_fastcgi_module  --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2003  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2004  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2005  make
+ 2006  ngxv8
+ 2007  vim /home/kijin/projects/jsoffloader/extremejs/ngxv8/ngx_http_v8_embed_module.cpp
+ 2008  ls
+ 2009  vim /home/kijin/projects/jsoffloader/extremejs/ngxv8/v8js.h 
+ 2010  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2011  make
+ 2012  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2013  make
+ 2014  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2015  make
+ 2016  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2017  make
+ 2018  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2019  make
+ 2020  vim objs/Makefile 
+ 2021  make
+ 2022  vim objs/Makefile 
+ 2023  make
+ 2024  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2025  make
+ 2026  vim objs/Makefile 
+ 2027  make
+ 2028  vim objs/Makefile 
+ 2029  make
+ 2030  vim /home/kijin/projects/jsoffloader/extremejs/cppngx/ngx_http_hello_world_module.cpp
+ 2031  make
+ 2032  vim /home/kijin/projects/jsoffloader/extremejs/cppngx/ngx_http_hello_world_module.cpp
+ 2033  make
+ 2034  vim objs/Makefile 
+ 2035  history 
+ 2036  -Wno-unused -std=c++11 -fpermissive
+ 2037  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2038  make
+ 2039  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2040  make
+ 2041  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2042  make
+ 2043  vim /home/kijin/projects/jsoffloader/extremejs/ngxv8/v8js.h
+ 2044  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2045  make
+ 2046  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/v8js.h
+ 2047  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2048  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/v8js.h
+ 2049  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2050  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/v8js.h
+ 2051  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/ngx_http_v8_embed_module.cpp 
+ 2052  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2053  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/ngx_http_v8_embed_module.cpp 
+ 2054  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2055  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/ngx_http_v8_embed_module.cpp 
+ 2056  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2057  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/ngx_http_v8_embed_module.cpp 
+ 2058  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2059  make
+ 2060  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2061  rm objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2062  make -f objs/Makefile objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2063  ls
+ 2064  cat conf/nginx.conf 
+ 2065  vim conf/nginx.conf 
+ 2066  sudo make install
+ 2067  history |grep nginx
+ 2068  history |grep sudo
+ 2069  sudo /usr/local/nginx/sbin/nginx
+ 2070  make
+ 2071  ls
+ 2072  cd objs/
+ 2073  ls
+ 2074  ./nginx 
+ 2075  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2076  cd ..
+ 2077  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2078  make
+ 2079  ls
+ 2080  ./objs/nginx 
+ 2081  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2082  make
+ 2083  ./objs/nginx 
+ 2084  sudo make install
+ 2085  sudo /usr/local/nginx/sbin/nginx
+ 2086  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2087  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/config 
+ 2088  cat ~/projects/jsoffloader/extremejs/cppngx/config 
+ 2089  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/config 
+ 2090  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2091  make
+ 2092  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/config 
+ 2093  vim conf/nginx.conf 
+ 2094  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2095  make
+ 2096  sudo  make install
+ 2097  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2098  sudo /usr/local/nginx/sbin/nginx
+ 2099  vim /usr/local/nginx/conf/nginx.conf
+ 2100  cat conf/nginx.conf 
+ 2101  sudo make install
+ 2102  vim /usr/local/nginx/conf/nginx.conf
+ 2103  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2104  sudo /usr/local/nginx/sbin/nginx
+ 2105  sudo make install
+ 2106  cat /usr/local/nginx/conf/nginx.conf
+ 2107  ls
+ 2108  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2109  date
+ 2110  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2111  rm objs/addon/ngxv8/ngx_http_v8_embed_module.o 
+ 2112  make
+ 2113  sudo make install
+ 2114  sudo /usr/local/nginx/sbin/nginx
+ 2115  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/config 
+ 2116  ls
+ 2117  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2118  vim conf/nginx.conf 
+ 2119  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2120  make
+ 2121  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2122  make
+ 2123  ls
+ 2124  rm objs/addon/ngxv8/ngx_http_*
+ 2125  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2126  make clean
+ 2127  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2128  make
+ 2129  rm objs/addon/ngxv8/ngx_http_hello_world_module.o 
+ 2130  make clean
+ 2131  make
+ 2132  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2133  make
+ 2134  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2135  make
+ 2136  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2137  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2138  make
+ 2139  sudo make install
+ 2140  sudo /usr/local/nginx/sbin/nginx
+ 2141  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2142  sudo /usr/local/nginx/sbin/nginx
+ 2143  history |grep sudo
+ 2144  sudo /usr/local/nginx/sbin/nginx
+ 2145  sudo fuser -k 8888/tcp
+ 2146  sudo /usr/local/nginx/sbin/nginx
+ 2147  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2148  curl localhost:8888
+ 2149  curl localhost:8888/interp
+ 2150  ls
+ 2151  hsi
+ 2152  history 
+ 2153  cat /home/kijin/projects/jsoffloader/extremejs/cppngx/config 
+ 2154  vim /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/config 
+ 2155  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2156  make
+ 2157  vim objs/Makefile 
+ 2158  cat /home/kijin/projects/jsoffloader/extremejs_cp/ngxv8/ngx_http_hello_world_module.cpp
+ 2159  make clean
+ 2160  ls
+ 2161  rm hello.c
+ 2162  rm hello.o 
+ 2163  vim conf/nginx.conf 
+ 2164  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2165  make
+ 2166  ls
+ 2167  vim conf/nginx.conf 
+ 2168  sudo make install
+ 2169  history |grep sudo
+ 2170  sudo /usr/local/nginx/sbin/nginx
+ 2171  sudo make install
+ 2172  sudo /usr/local/nginx/sbin/nginx
+ 2173  vim /usr/local/nginx/conf/nginx.conf
+ 2174  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2175  sudo /usr/local/nginx/sbin/nginx
+ 2176  sudo fuser -k 8888/tcp
+ 2177  sudo /usr/local/nginx/sbin/nginx
+ 2178  curl localhost:8888
+ 2179  curl localhost:8888/interp
+ 2180  sudo fuser -k 8888/tcp
+ 2181  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2182  make
+ 2183  sudo make install
+ 2184  sudo /usr/local/nginx/sbin/nginx
+ 2185  curl localhost:8888/interp
+ 2186  curl localhost:8888/interpp
+ 2187  curl localhost:8888/interp
+ 2188  ls
+ 2189  sudo fuser -k 8888/tcp
+ 2190  sudo ./objs/nginx 
+ 2191  curl localhost:8888/interp
+ 2192  sudo ./objs/nginx 
+ 2193  ls
+ 2194  curl localhost:8888/interp
+ 2195  curl -i localhost:8888/interp
+ 2196  sudo fuser -k 8888/tcp
+ 2197  doraji
+ 2198  sudo fuser -k 8888/tcp
+ 2199  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs_cp/ngxv8 --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2200  sudo rm -rf objs/nginx
+ 2201  sudo rm -rf /usr/local/nginx/sbin/nginx
+ 2202  make
+ 2203  sudo make install
+ 2204  sudo /usr/local/nginx/sbin/nginx
+ 2205  history |grep curl
+ 2206  curl -i localhost:8888/interp
+ 2207  history |grep ./configure
+ 2208  history |grep ./configure |grep cpp
+ 2209  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2210  vim conf/nginx.conf 
+ 2211  make
+ 2212  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2213  make
+ 2214  sudo  make install
+ 2215  sudo fuser -k 8888/tcp
+ 2216  sudo /usr/local/nginx/sbin/nginx
+ 2217  curl localhost:8888/hello
+ 2218  vim /usr/local/nginx/conf/nginx.conf
+ 2219  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2220  sudo /usr/local/nginx/sbin/nginx
+ 2221  curl localhost:8888/hello
+ 2222  vim sudo vim /usr/local/nginx/conf/nginx.conf
+ 2223  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2224  sudo /usr/local/nginx/sbin/nginx
+ 2225  sudo fuser -k 8888/tcp
+ 2226  sudo /usr/local/nginx/sbin/nginx
+ 2227  curl localhost:8888/hello
+ 2228  sudo fuser -k 8888/tcp
+ 2229  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2230  make && sudo make install
+ 2231  vim sudo vim /usr/local/nginx/conf/nginx.conf
+ 2232  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2233  sudo /usr/local/nginx/sbin/nginx
+ 2234  curl localhost:8888/hello
+ 2235  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2236  ls
+ 2237  sudo vim conf/nginx.conf 
+ 2238  make clean
+ 2239  sudo rm /usr/local/nginx/sbin/nginx
+ 2240  sudo fuser -k 8888/tcp
+ 2241  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2242  make && sudo make install
+ 2243  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2244  sudo /usr/local/nginx/sbin/nginx
+ 2245  curl localhost:8888/hello
+ 2246  sudo fuser -k 8888/tcp
+ 2247  ls
+ 2248  sudo ./objs/nginx 
+ 2249  curl localhost:8888/hello
+ 2250  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2251  make clean
+ 2252  ./configure --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2253  sudo fuser -k 8888/tcp
+ 2254  curl localhost:8888/hello
+ 2255  sudo ./objs/nginx 
+ 2256  make
+ 2257  sudo ./objs/nginx 
+ 2258  curl localhost:8888/hello
+ 2259  history 
+ 2260  sudo fuser -k 8888/tcp
+ 2261  ./configure --with-debug --add-module=/home/kijin/projects/jsoffloader/extremejs/cppngx --with-cc-opt="-Wno-deprecated -fomit-frame-pointer -pthread -Wno-unused -Wno-error -std=c++11 -fpermissive" --with-ld-opt="-lstdc++ -ldl -lpthread" --without-http_rewrite_module --without-http_fastcgi_module --without-http_scgi_module --without-http_proxy_module --without-http_split_clients_module --without-http_uwsgi_module --without-http_gzip_module
+ 2262  make && sudo make install
+ 2263  sudo ./objs/nginx 
+ 2264  curl localhost:8888/hello
+ 2265  ls
+ 2266  cd objs/
+ 2267  ls
+ 2268  cat autoconf.err 
+ 2269  cd ..
+ 2270  ls
+ 2271  cd objs/
+ 2272  ls
+ 2273  error_log
+ 2274  cd ..
+ 2275  ls
+ 2276  vim conf/nginx.conf 
+ 2277  ls
+ 2278  history 
+ 2279  sudo fuser -k 8888/tcp
+ 2280  sudo ./objs/nginx
+ 2281  curl localhost:8888/hello
+ 2282  cat /var/log/ninja.log 
+ 2283  vim conf/nginx.conf 
+ 2284  sudo fuser -k 8888/tcp
+ 2285  curl localhost:8888/hello
+ 2286  sudo ./objs/nginx
+ 2287  curl localhost:8888/hello
+ 2288  sudo make install
+ 2289  sudo fuser -k 8888/tcp
+ 2290  vim /usr/local/nginx/conf/nginx.conf
+ 2291  sudo vim /usr/local/nginx/conf/nginx.conf
+ 2292  sudo /usr/local/nginx/sbin/nginx
+ 2293  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2294  sudo fuser -k 8888/tcp
+ 2295  sudo /usr/local/nginx/sbin/nginx
+ 2296  curl localhost:8888/hello
+ 2297  cat /usr/local/nginx/conf/nginx.conf
+ 2298  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2299  sudo fuser -k 8888/tcp
+ 2300  sudo /usr/local/nginx/sbin/nginx
+ 2301  sudo fuser -k 8888/tcp
+ 2302  sudo /usr/local/nginx/sbin/nginx
+ 2303  curl localhost:8888/hello
+ 2304  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2305  sudo fuser -k 8888/tcp
+ 2306  sudo /usr/local/nginx/sbin/nginx
+ 2307  curl localhost:8888/hello
+ 2308  cat /var/log/kijin_access.log 
+ 2309  curl localhost:8888/hello
+ 2310  cat /var/log/kijin_access.log 
+ 2311  sudo /usr/local/nginx/sbin/nginx
+ 2312  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2313  sudo apt-get install nginx-full
+ 2314  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2315  curl localhost:8888/hello
+ 2316  sudo fuser -k 8888/tcp
+ 2317  sudo /usr/local/nginx/sbin/nginx
+ 2318  curl localhost:8888/hello
+ 2319  sudo /usr/local/nginx/sbin/nginx
+ 2320  cat /var/log/kijin_access.log 
+ 2321  curl --header "Content-Type: application/json"   --request POST   --data '{"username":"xyz","password":"xyz"}'   localhost:8888/hello
+ 2322  cat /var/log/kijin_access.log 
+ 2323  sudo vim /usr/local/nginx/conf/nginx.conf 
+ 2324  sudo fuser -k 8888/tcp
+ 2325  sudo /usr/local/nginx/sbin/nginx
+ 2326  curl --header "Content-Type: application/json"   --request POST   --data '{"username":"xyz","password":"xyz"}'   localhost:8888/hello
+ 2327  curl --header "Content-Type: application/json"   --request POST   --data '{"username":"xyz","password":"xyz"}'   localhost:8888/interp
+ 2328  cat /var/log/kijin_access.log 
+ 2329  curl --header "Content-Type: application/json"   --request POST   --data '{"username":"xyz","password":"xyz"}'   localhost:8888/interp
+ 2330  cat /var/log/kijin_access.log 
+ 2331  curl --header "Content-Type: application/json"   --request POST   --data '{"username":"xyz","password":"xyz"}'   localhost:8888/interp
+ 2332  cat /var/log/kijin_access.log 
+ 2333  history 
+ 2334  history >> cmd_hist.txt
